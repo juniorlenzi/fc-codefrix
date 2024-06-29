@@ -1,5 +1,5 @@
-import { EntityValidationError } from '../../@shared/domain/validators/validation.error'
-import { UUID } from '../../@shared/domain/value-objects/uuid.vo'
+import { EntityValidationError } from '../../../@shared/domain/validators/validation.error'
+import { Uuid } from '../../../@shared/domain/value-objects/uuid.vo'
 import { Category } from '../category.entity'
 
 describe('Category Unit Tests', () => {
@@ -13,7 +13,7 @@ describe('Category Unit Tests', () => {
       name: 'Movie'
     })
 
-    expect(category.category_id).toBeInstanceOf(UUID)
+    expect(category.category_id).toBeInstanceOf(Uuid)
     expect(category.name).toBe('Movie')
     expect(category.description).toBeNull()
     expect(category.is_active).toBe(true)
@@ -26,7 +26,7 @@ describe('Category Unit Tests', () => {
       is_active: false
     })
 
-    expect(category.category_id).toBeInstanceOf(UUID)
+    expect(category.category_id).toBeInstanceOf(Uuid)
     expect(category.name).toBe('Movie')
     expect(category.description).toBe('Movie Description')
     expect(category.is_active).toBe(false)
@@ -71,7 +71,7 @@ describe('Category Unit Tests', () => {
   })
 
   test('should convert to JSON', () => {
-    const id = new UUID()
+    const id = new Uuid()
     const category = new Category({
       category_id: id,
       name: 'Movie',
@@ -91,7 +91,7 @@ describe('Category Unit Tests', () => {
   })
 
   describe('category_id field', () => {
-    const arrange = [{ category_id: null }, { category_id: undefined }, { category_id: new UUID() }]
+    const arrange = [{ category_id: null }, { category_id: undefined }, { category_id: new Uuid() }]
 
     test.each(arrange)('id = %j', ({ category_id }) => {
       const category = new Category({
@@ -99,9 +99,9 @@ describe('Category Unit Tests', () => {
         category_id: category_id as any
       })
 
-      expect(category.category_id).toBeInstanceOf(UUID)
+      expect(category.category_id).toBeInstanceOf(Uuid)
 
-      if (category_id instanceof UUID) {
+      if (category_id instanceof Uuid) {
         expect(category.category_id).toBe(category_id)
       }
     })

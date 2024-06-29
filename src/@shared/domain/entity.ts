@@ -1,4 +1,6 @@
+import { ValueObject } from './value-object'
+
 export abstract class Entity {
-  abstract toJSON(): object
-  abstract get entityId(): string
+  abstract get entity_id(): ValueObject
+  abstract toJSON(): any
 }

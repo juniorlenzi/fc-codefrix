@@ -1,10 +1,11 @@
-import { Entity } from '../@shared/domain/entity'
-import { EntityValidationError } from '../@shared/domain/validators/validation.error'
-import { UUID } from '../@shared/domain/value-objects/uuid.vo'
+import { Entity } from '../../@shared/domain/entity'
+import { EntityValidationError } from '../../@shared/domain/validators/validation.error'
+import { ValueObject } from '../../@shared/domain/value-object'
+import { Uuid } from '../../@shared/domain/value-objects/uuid.vo'
 import { CategoryValidatorFactory } from './category.validator'
 
 export type CategoryConstructorProps = {
-  category_id?: UUID
+  category_id?: Uuid
   name: string
   description?: string | null
   is_active?: boolean
@@ -19,14 +20,14 @@ export type CategoryCreateCommand = {
 export class Category extends Entity {
   constructor(props: CategoryConstructorProps) {
     super()
-    this.category_id = props.category_id ?? new UUID()
+    this.category_id = props.category_id ?? new Uuid()
     this.name = props.name
     this.description = props.description ?? null
     this.is_active = props.is_active ?? true
     this.created_at = props.created_at ?? new Date()
   }
 
-  category_id: UUID
+  category_id: Uuid
   name: string
   description: string | null
   is_active: boolean
@@ -46,6 +47,10 @@ export class Category extends Entity {
   changeDescription(description: string | null): void {
     this.description = description
     Category.validate(this)
+  }
+
+  get entity_id(): ValueObject {
+    return this.category_id
   }
 
   activate(): void {
