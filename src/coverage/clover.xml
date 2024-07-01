@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719798650950" clover="3.2.0">
-  <project timestamp="1719798650950" name="All files">
-    <metrics statements="1011" coveredstatements="962" conditionals="226" coveredconditionals="216" methods="119" coveredmethods="114" elements="1356" coveredelements="1292" complexity="0" loc="1011" ncloc="1011" packages="18" files="27" classes="27"/>
+<coverage generated="1719799218282" clover="3.2.0">
+  <project timestamp="1719799218282" name="All files">
+    <metrics statements="996" coveredstatements="951" conditionals="226" coveredconditionals="216" methods="119" coveredmethods="114" elements="1341" coveredelements="1281" complexity="0" loc="996" ncloc="996" packages="18" files="27" classes="27"/>
     <package name="category.application.common">
       <metrics statements="19" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="category-output.ts" path="/home/node/app/src/category/application/common/category-output.ts">
@@ -28,38 +28,33 @@
       </file>
     </package>
     <package name="category.application.use-cases.create-category">
-      <metrics statements="29" coveredstatements="27" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <metrics statements="24" coveredstatements="22" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="create-category.use-case.ts" path="/home/node/app/src/category/application/use-cases/create-category/create-category.use-case.ts">
-        <metrics statements="29" coveredstatements="27" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="24" coveredstatements="22" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="6" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="6" type="stmt"/>
-        <line num="13" count="6" type="cond" truecount="0" falsecount="1"/>
-        <line num="14" count="0" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="cond" truecount="0" falsecount="1"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
         <line num="17" count="6" type="stmt"/>
         <line num="18" count="6" type="stmt"/>
         <line num="19" count="6" type="stmt"/>
         <line num="20" count="6" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
       </file>
     </package>
     <package name="category.application.use-cases.delete-category">
@@ -156,9 +151,9 @@
       </file>
     </package>
     <package name="category.application.use-cases.update-category">
-      <metrics statements="46" coveredstatements="46" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+      <metrics statements="40" coveredstatements="40" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="update-category.use-case.ts" path="/home/node/app/src/category/application/use-cases/update-category/update-category.use-case.ts">
-        <metrics statements="46" coveredstatements="46" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+        <metrics statements="40" coveredstatements="40" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -166,45 +161,39 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="17" type="stmt"/>
-        <line num="13" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="16" type="stmt"/>
-        <line num="15" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="14" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="14" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="19" count="14" type="stmt"/>
-        <line num="20" count="17" type="stmt"/>
-        <line num="21" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="23" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="24" count="14" type="stmt"/>
-        <line num="25" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="27" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="28" count="14" type="stmt"/>
-        <line num="29" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="30" count="4" type="stmt"/>
-        <line num="31" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="32" count="14" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="22" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="26" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="30" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="33" count="14" type="stmt"/>
         <line num="34" count="14" type="stmt"/>
         <line num="35" count="14" type="stmt"/>
         <line num="36" count="14" type="stmt"/>
-        <line num="37" count="4" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
       </file>
     </package>
     <package name="category.domain">
@@ -861,7 +850,7 @@
       </file>
     </package>
     <package name="shared.domain.validators">
-      <metrics statements="82" coveredstatements="46" conditionals="7" coveredconditionals="6" methods="8" coveredmethods="4"/>
+      <metrics statements="78" coveredstatements="46" conditionals="7" coveredconditionals="6" methods="8" coveredmethods="4"/>
       <file name="class-validator-fields.ts" path="/home/node/app/src/shared/domain/validators/class-validator-fields.ts">
         <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -938,7 +927,7 @@
         <line num="49" count="232" type="stmt"/>
       </file>
       <file name="validation.error.ts" path="/home/node/app/src/shared/domain/validators/validation.error.ts">
-        <metrics statements="13" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -948,10 +937,6 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
       </file>
     </package>
     <package name="shared.domain.value-objects">

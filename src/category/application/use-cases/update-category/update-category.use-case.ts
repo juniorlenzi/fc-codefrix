@@ -4,6 +4,7 @@ import { Uuid } from '../../../../shared/domain/value-objects/uuid.vo'
 import { Category } from '../../../domain/category.entity'
 import { ICategoryRepository } from '../../../domain/category.repository'
 import { CategoryOutputMapper, CategoryOutput } from '../../common/category-output'
+import { UpdateCategoryInput } from './update-category.input'
 
 export class UpdateCategoryUseCase implements IUseCase<UpdateCategoryInput, UpdateCategoryOutput> {
   constructor(private categoryRepository: ICategoryRepository) {}
@@ -34,13 +35,6 @@ export class UpdateCategoryUseCase implements IUseCase<UpdateCategoryInput, Upda
 
     return CategoryOutputMapper.toOutput(category)
   }
-}
-
-export type UpdateCategoryInput = {
-  id: string
-  name?: string
-  description?: string
-  is_active?: boolean
 }
 
 export type UpdateCategoryOutput = CategoryOutput
