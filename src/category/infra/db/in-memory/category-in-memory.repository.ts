@@ -16,6 +16,7 @@ export class CategoryInMemoryRepository extends InMemorySearchableRepository<Cat
       return i.name.toLowerCase().includes(filter.toLowerCase())
     })
   }
+
   getEntity(): new (...args: any[]) => Category {
     return Category
   }

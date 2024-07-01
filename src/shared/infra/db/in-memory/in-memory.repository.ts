@@ -1,7 +1,6 @@
 import { Entity } from '../../../domain/entity'
 import { NotFoundError } from '../../../domain/errors/not-found.error'
 import { IRepository, ISearchableRepository } from '../../../domain/repository/repository.interface'
-
 import { SearchParams, SortDirection } from '../../../domain/repository/search-params'
 import { SearchResult } from '../../../domain/repository/search-result'
 import { ValueObject } from '../../../domain/value-object'
@@ -63,8 +62,8 @@ export abstract class InMemorySearchableRepository<E extends Entity, EntityId ex
   protected abstract applyFilter(items: E[], filter: Filter | null): Promise<E[]>
 
   protected applyPaginate(items: E[], page: SearchParams['page'], per_page: SearchParams['per_page']) {
-    const start = (page - 1) * per_page // 0 * 15 = 0
-    const limit = start + per_page // 0 + 15 = 15
+    const start = (page - 1) * per_page
+    const limit = start + per_page
     return items.slice(start, limit)
   }
 
